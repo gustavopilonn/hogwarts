@@ -1,0 +1,47 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.5rem 2rem;
+  }
+  }
+
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+  
+    .header .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background: #fff;
+      width: 30rem;
+    }
+
+    .header .navbar .active {
+      right: 0;
+
+    }
+
+    .header .navbar a{
+      color: var(--black);
+      display: block;
+      margin: 1.5rem;
+      padding: .5rem;
+      font-size: 2rem;
+
+    }
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  
+    header {
+      padding: 1.5rem 2rem;
+    }
+    }

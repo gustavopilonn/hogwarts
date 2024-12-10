@@ -1,0 +1,258 @@
+body,
+html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/Hogwarts-School-Art.jpg");
+    min-height: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 2%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 4.7rem;
+    margin-left: 10px;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .3rem;
+}
+
+.header .icons{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+}
+
+.header .icons:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%; 
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    right: 2rem;
+
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+
+@media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    
+    }
+  
+    .header .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background: #fff;
+      width: 30rem;
+    }
+
+    .header .navbar .active {
+      right: 0;
+
+    }
+}
+/* FIM DO HEADER */
+
+/* ===================syllabus==================== */
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
+  background-color: #0b0b0b;;
+}
+  
+  .syllabus-nav ul {
+    position: sticky;
+    top: 10em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+  }
+  
+  .syllabus-nav ul li {
+    list-style: none;
+    line-height: 30px;
+  }
+  
+  .syllabus-nav ul li a {
+    text-decoration: none;
+    color: #b79b48;
+  }
+  
+  .syllabus-nav ul li a:hover {
+    color: #ffbf00;
+  }
+  
+  .courses {
+    display: none;
+    flex-wrap: wrap;
+  }
+  
+  .courses .subject {
+    flex: 1 1 0;
+    min-width: 250px;
+    max-width: 450px;
+    background: rgb(45, 50, 77);
+    color: #fff;
+    margin: .5em;
+  }
+  
+  .courses .subject:hover {
+    transform: translateY(-5px);
+  }
+  
+  .first-year {
+    display: flex;
+  }
+  
+  .courses .subject img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .courses .subject h3 {
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .courses .subject p {
+    padding: .5em;
+    text-align: justify;
+  }
+  @media (max-width:769px) {
+    .syllabus {
+      right: 0;
+      left: 0;
+      top: 72px;
+      bottom: 121px;
+    }
+    .courses{
+      justify-content: center;
+    }
+  }
+  @media (max-width:481px) {
+    .syllabus {
+      right: 0;
+      left:0;
+      width: 100%;
+      top: 72px;
+      bottom: 81px;
+      border-radius: 0;
+    }
+    .syllabus-nav ul {
+      width: 100%;
+      padding: 0;
+    }
+    
+    .syllabus-nav ul li {
+      line-height: 20px;
+      list-style: none;
+    }
+    
+    .syllabus-nav ul li a {
+      font-size: .8em;
+    }
+    .courses .subject h3 {
+      font-size: 1em;
+    }
+    
+    .courses .subject p {
+      font-size: .5em;
+    }
+    .courses .subject {
+      min-width: 150px;
+      max-width: 250px;
+      background: rgb(45, 50, 77);
+      color: #fff;
+      margin: .5em;
+    }
+  }
+  @media (max-width:375px) {
+    .syllabus {
+      bottom: 61px;
+    }
+    
+    .syllabus-nav ul {
+      width: 100%;
+      padding: 0 1em;
+    }
+    
+    .syllabus-nav ul li {
+      list-style: none;
+    }
+  }
+

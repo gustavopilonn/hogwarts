@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogwarts</title>
+    <link rel="shortcut icon" href="./images/favicon-hogwarts.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="./images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="./index.html">Página Inicial</a>
+            <a href="about.html">Sobre </a>
+            <a href="#menu">Acadêmicos</a>
+            <a href="./class.html">Aulas</a>
+            <a href="#supplies">Materiais</a>
+            <a href="#contact">Contato</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Faça sua busca...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+
+    <!-- Header with image -->
+    <div class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px"> </span>
+        </div>
+    </div>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE HOGWARTS</span></h5>
+
+                <p>  <strong>Seja muito bem-vindo(a) a Hogwarts!</strong> <br> <br>
+                    Localizada na Escócia, próxima a Dufftown, a Escola de Magia e Bruxaria de Hogwarts é
+                    um prestigiado internato britânico para bruxos e bruxas com idades entre onze e dezessete
+                    anos. Em nossa escola, aceitamos apenas estudantes da Grã-Bretanha e da Irlanda. Apesar disso, nossa
+                    escola é pública, financiada pelo Ministério da Magia Britânico. Somos responsáveis por formar
+                    alguns dos bruxos mais memoráveis de todos os tempos, entre eles, como nosso principal aluno
+                    <em>Harry Potter</em>. <br> A escola tem uma quantidade considerável de feitiços e encantamentos ao seu redor para que não seja encontrada por nenhum trouxa (seres não mágicos). Ou seja, as pessoas comuns, não conseguem visualizar a nossa escola de magia; eles veem apenas ruínas e vários sinais e avisos de local restrito. <br> A eletricidade e dispositivos eletrônicos não funcionam em Hogwarts, portanto, pense bem no que trará consigo em sua mala. Algumas de nossas salas e escadas tendem a se mover, por isso, trate de estar sempre atento. Principalmente com nossos degraus da Grande Escadaria, não queremos que seu primeiro dia seja marcado por estar perdido em nossos corredores a noite, não é muito aconselhável, se assim podemos dizer.</p>
+
+                <div id="image-content">
+                    <img src="./images/harry.PNG" style="width:100%;max-width:700px;margin-top:32px;">
+                </div>
+
+                <br> <br> Hogwarts foi criada por volta do ano 990 d.C., pelos quatro maiores
+                bruxos da época: Godric Grifinória, Helga Lufa-Lufa, Salazar Sonserina e Rowena Corvinal.</p>
+                <p>Naquele tempo, a magia ainda era vista com muito preconceito pelos olhos dos trouxas (seres não
+                    mágicos).
+
+                    <br><br> Antes da criação de escolas de magia, o comum era que as famílias passassem os
+                    seus conhecimentos de geração para geração. Foi somente durante algum momento da Idade Média que uma
+                    bruxa chamada Rainha Maeve decidiu ajudar na educação de pequenos bruxos que nasciam trouxas.
+                </p>
+                <p>Também com este pensamento em mente, Godric, Salazar, Helga e Rowena decidiram criar a sua própria
+                    escola para que tivessem a oportunidade de ensinar de forma segura todas as crianças que
+                    desenvolviam poderes mágicos — independente de serem puro-sangue ou não.</p>
+                <p> <br>No início, os quatro eram professores e selecionavam os alunos de acordo com aquilo que cada um
+                    acreditava, gerando as famosas casas de Hogwarts. Para Godric Grifinória, coragem e bravura eram
+                    as principais características que os alunos de sua casa precisavam ter: Helga Lufa-Lufa prezava a
+                    lealdade e a paciência; Rowena Corvinal acreditava que a inteligência era o mais importante; já
+                    Salazar Sonserina defendia que apenas alunos puro-sangue deveriam ser aceitos na escola.</p> <br>
+                <img class="founders" src="./images/fundadores-de-hogwarts-1229940.jpg" alt="">
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>Godric Grifinória, Helga Lufa-Lufa, Rowena Corvinal e Salazar Sonserina</i></p>
+                    <p>Fundadores de Hogwarts</p>
+                </div>
+                <p>Diferente de Salazar, os outros fundadores defendiam que a escola deveria ser para todos os bruxos a
+                    partir dos 11 anos. Devido a este conflito, Salazar abandonou a escola e, antes de ir embora, criou
+                    a famosa Câmara Secreta, que poderia ser aberta apenas por um herdeiro direto da Sonserina,
+                    libertando o Basilisco, uma enorme cobra que teria o intuito de “purificar” a escola e acabar com
+                    todos os alunos nascidos trouxas.</p>
+
+                <h2>O Brasão </h2>
+
+                <img class="founders" src="./images/brasao.png" width="320px" style="margin-left: 130px; margin-bottom: 15px;">
+
+                <p>
+                    O brasão de Hogwarts mostra o animal-símbolo de cada casa, com suas respectivas cores. <br>São eles, em sentido horário, iniciando pelo canto superior esquerdo: 
+                O Leão da Grifinória (Gryffindor), a Serpente da Sonserina (Slytherin), a Águia da Corvinal (Ravenclaw) e o Texugo da Lufa-Lufa (Hufflepuff). <br> Em baixo, está também o lema de Hogwarts <strong>"Draco dormiens nunquam titillandus" </strong> que significa "Nunca faças cócegas a um dragão adormecido".
+                </p>
+
+                <h2>O Ensino</h2>
+
+
+                <div id="image-content">
+                    <img src="./images/school.jpg" style="width:100%;max-width:700px;margin-top:32px;">
+                </div> <br>
+                <p>Os alunos embarcam para a escola no dia 1 de setembro, com as aulas tendo o seu início já no dia
+                    seguinte. Ao total, são lecionadas quatro matérias antes da hora do almoço, e duas na parte da
+                    tarde. Em Hogwarts, os estudantes possuem inúmeras matérias. <br> As aulas obrigatórias que todo
+                    bruxo
+                    precisa assistir em seu primeiro ano letivo são: Transfiguração, Defesa Contra as Artes das Trevas,
+                    Poções, Feitiços, História da Magia, Astronomia, Herbologia e Voo Em Vassouras. <br><br>Enquanto
+                    isso, ao
+                    final do segundo ano, os alunos também precisam escolher, pelo menos, mais duas matérias para sua
+                    grade curricular, além das disciplinas obrigatórias. Eles podem escolher entre Trato das Criaturas
+                    Mágicas, Aritmancia, Estudo de Runas Antigas, Estudos dos Trouxas e Adivinhação. <br> <br>
+                    Por fim, aqueles que se interessarem por Quadribol podem se inscrever a partir do segundo ano, e por
+                    Aparatação a partir do sexto. <br> <br>Já aulas mais especializadas, como Alquimia, podem ser
+                    oferecidas nos
+                    últimos dois anos, caso haja demanda o suficiente para formar uma sala. Para saber mais sobre as
+                    aulas e as
+                    matérias lecionadas em Hogwarts, clique aqui: <a href="./class.html" class="btn-class">
+                        <strong>SAIBA
+                            MAIS</strong></a>
+                </p> <br>
+
+                <p> <strong>Segue abaixo, nossa lista de materiais escolares obrigatórios, para os alunos novatos de
+                        Hogwarts.</strong> </p> <br>
+
+                <div id="image-content">
+                    <img src="./images/materiais.jpeg" style="width:100%;max-width:700px;margin-top:32px;">
+                    <p>Caso tenha ficado com alguma dúvida referente aos materiais necessários, basta <a href="./materials.html" target="_blank"><strong>clicar aqui.</strong> </a></p>
+                </div>
+                <p><br> <br>No mais, desejamos a todos um ótimo início de aulas e esperamos que todos possam desfrutar dessa oportunidade, para que os próximos anos sejam os mais marcantes e produtivos de suas vidas.</p> <br> "O mundo não se divide em pessoas boas e más. Todos temos luz e trevas dentro de nós. O que importa é o lado o qual decidimos agir. Isso é o que realmente somos <strong> <br> - Sirius Black</strong>"
+               
+            </div>
+
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FALE CONOSCO</span></h5>
+                <p>Se tiver alguma dúvida, ou algum comentário, conte-nos abaixo: </p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Idade" required
+                            name="Age"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Data e Hora"
+                            required name="date" value="2024-07-30T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Escreva aqui seu texto"
+                            required name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">Enviar</button></p>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Hogwarts <br> Escola de Magia e Bruxaria</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>
